@@ -61,7 +61,10 @@ for (let k of csvString){
     if(k === "\n"){
         console.log(`${cell1}, ${cell2}, ${cell3}, ${cell4}`)
         commaCounter = 0;
-
+        cell1 = ""; 
+        cell2 = ""; 
+        cell3 = "";
+        cell4 = "";
     }
     else if(k === ","){
         commaCounter++;
